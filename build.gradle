@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('lib/mysql-connector-java-<version>.jar')
+    implementation 'org.openjfx:javafx-controls:11'
+    implementation 'org.openjfx:javafx-fxml:11'
+    testImplementation 'junit:junit:4.13.1'
+}
+
+application {
+    mainClassName = 'com.creditrisk.app.Main'
+}
